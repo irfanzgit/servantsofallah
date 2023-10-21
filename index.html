@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -34,6 +34,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
 </head>
 
 <body>
@@ -52,8 +53,6 @@
                 <a href="https://twitter.com/servantsofallah09" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="https://www.facebook.com/servantsofallah09" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="https://www.instagram.com/servantsofallah09" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.skype.com/YourSkypeProfile" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="https://www.linkedin.com/in/YourLinkedInProfile" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
         <nav id="navbar" class="nav-menu navbar">
@@ -76,10 +75,83 @@
       <p>I'm <span class="typed" data-typed-items="DevOps Engineer, Developer, Freelancer, Photographer"></span></p>
     </div>
   </section><!-- End Hero -->
+  <head>
+    <title>My HTML Project</title>
+    <style>
+        .button-container {
+            text-align: right;
+            padding: 20px;
+        }
 
+        .quran-button, .quran-tafsir-button, .sahih-muslim-button, .sahih-bukhari-button, .youtube-button {
+            background: linear-gradient(135deg, #41A8F4, #1D5FAA);
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            margin: 10px 10px 0 0; /* Adjust the margin to control spacing */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .quran-button:hover, .quran-tafsir-button:hover, .sahih-muslim-button:hover, .sahih-bukhari-button:hover, .youtube-button:hover {
+            background: linear-gradient(135deg, #1D5FAA, #41A8F4);
+            transform: scale(1.05);
+        }
+
+        .button-text {
+            display: inline-block;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="quran-button" onclick="redirectToQuran()">
+            <span class="button-text">Al-Quran</span>
+        </button>
+        <button class="quran-tafsir-button" onclick="redirectToQuranTafsir()">
+            <span class="button-text">Al-Qur'an Tafsir</span>
+        </button>
+        <button class="sahih-muslim-button" onclick="redirectToSahihMuslim()">
+            <span class="button-text">Sahih Muslim</span>
+        </button>
+        <button class="sahih-bukhari-button" onclick="redirectToSahihBukhari()">
+            <span class="button-text">Sahih al-Bukhari</span>
+        </button>
+        <button class="youtube-button" onclick="redirectToYouTube()">
+            <span class="button-text">YouTube</span>
+        </button>
+    </div>
+
+    <script>
+        function redirectToQuran() {
+            window.location.href = "https://quran.com/";
+        }
+
+        function redirectToQuranTafsir() {
+            window.location.href = "https://www.alim.org/quran/tafsir/ibn-kathir/";
+        }
+
+        function redirectToSahihMuslim() {
+            window.location.href = "https://sunnah.com/muslim";
+        }
+
+        function redirectToSahihBukhari() {
+            window.location.href = "https://sunnah.com/bukhari";
+        }
+
+        function redirectToYouTube() {
+            window.location.href = "http://www.youtube.com/@servantsofallah313";
+        }
+    </script>
+</body>
   <main id="main">
-
+  
     <!-- ======= About Section ======= -->
+  
     <section id="about" class="about">
       <div class="container">
 
@@ -93,7 +165,7 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>UI/UX Designer &amp; Web Developer.</h3>
+          <h3>UI/UX Designer &amp; Web Developer.</h3>
             <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
