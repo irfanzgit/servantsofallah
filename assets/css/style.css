@@ -137,7 +137,7 @@ h6 {
   padding-right: 30px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 768px) {
   #header {
     left: -300px;
   }
@@ -240,22 +240,15 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
-
-#hero:before {
-  content: "";
-  background: rgba(5, 13, 24, 0.3);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+@media (min-width: 780px) {
+  #hero {
+    background-attachment: fixed;
+  }
 }
-
 #hero .hero-container {
   position: relative;
   z-index: 2;
@@ -268,23 +261,32 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  text-align: center;
+  display: block;
+
 }
 
 #hero p {
   color: #fff;
   margin-bottom: 50px;
-  font-size: 26px;
+  font-size: 23px;
   font-family: "Poppins", sans-serif;
+  
 }
-
+@media (min-width: 780px) {
+  #hero p {
+    background-attachment: fixed;
+  }
+}
 #hero p span {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
+  margin-left: 10px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 780px) {
   #hero {
     background-attachment: fixed;
   }
@@ -346,38 +348,39 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content h3 {
+.about-developer .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #173b6c;
 }
 
-.about .content ul {
+.about-developer .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.about-developer .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
-.about .content ul strong {
+.about-developer .content ul strong {
   margin-right: 10px;
 }
 
-.about .content ul i {
+.about-developer .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: #149ddd;
   line-height: 0;
 }
 
-.about .content p:last-child {
-  margin-bottom: 0;
+.about-developer .content p:last-child {
+  text-align: center !important; /* Center-align the text and use !important */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin-top: 20px; /* Add some top margin for spacing */
 }
-
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -430,7 +433,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
